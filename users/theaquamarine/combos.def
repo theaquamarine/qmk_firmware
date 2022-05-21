@@ -1,0 +1,54 @@
+// #include "combos/germ-vim-helpers.def"
+
+COMB(wsDollar, KC_DOLLAR, KC_W, LALT_T(KC_S))
+COMB(edPercent, KC_PERCENT, KC_E, LCTL_T(KC_D))
+COMB(rfCaret, KC_CIRCUMFLEX, KC_R, LSFT_T(KC_F))
+COMB(fgPipe, S(KC_NUBS), LSFT_T(KC_F), KC_G) // diy pipe key
+
+COMB(yhColon, KC_COLN, KC_Y, KC_H)
+COMB(ujColon, KC_COLN, KC_U, RSFT_T(KC_J))
+
+COMB(jkEsc, KC_ESC, KC_J, KC_K)
+COMB(jkmodEsc, KC_ESC, RSFT_T(KC_J), RCTL_T(KC_K))
+
+COMB(hjMinus, KC_MINS, KC_H, RSFT_T(KC_J))
+// COMB(klmodTab, KC_TAB, RCTL_T(KC_K), LALT_T(KC_L))
+COMB(klmodEnter, KC_ENTER, RCTL_T(KC_K), LALT_T(KC_L))
+
+COMB(cad, RCTL(LALT(KC_DEL)),     LT(1,KC_BSPC), RSFT_T(KC_J), RCTL_T(KC_K), LALT_T(KC_L))
+
+COMB(hnSemicolon, KC_SCLN, KC_H, KC_N)
+COMB(jmSemicolon, KC_SCLN, RSFT_T(KC_J), LT(1, KC_M))
+
+COMB(mcommamodEnter, KC_ENTER, LT(1, KC_M), LT(2, KC_COMM))
+
+COMB(resetcombo, RESET, KC_U, KC_I, KC_O, KC_P, LT(2, KC_COMM))
+
+// trying to find somewhere got for kc_mins
+// COMB(cxMins, KC_MINS, KC_C, KC_X)
+// COMB(erMins, KC_MINS, KC_E, KC_R)
+// COMB(gtMins, KC_MINS, KC_G, KC_T)
+
+// from Germ's vim helpers https://github.com/qmk-combos/combos/blob/master/combos/germ-vim-helpers.def
+// COMB(weEsc,      KC_ESC,    KC_W, KC_E)
+// COMB(uiEsc,      KC_ESC,    KC_U, KC_I)
+
+// COMB(shiftCaps, KC_CAPS,    LSFT_T(KC_F), RSFT_T(KC_J))
+COMB(homingEnter, KC_ENTER,    LSFT_T(KC_F), RSFT_T(KC_J))
+
+
+// idea from Hands Down https://sites.google.com/alanreiser.com/handsdown#h.aplo097wq6hh
+// KC_UNDO etc don't work in windows https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md
+// would have to change to LGUI on macos
+// COMB(zxUndo,    KC_UNDO,    KC_Z, KC_X)
+// COMB(zcCut,     KC_CUT,     KC_Z, KC_C)
+// COMB(xcCopy,    KC_COPY,    KC_X, KC_C)
+// COMB(cvPaste,   KC_PASTE,   KC_C, KC_V)
+SUBS(zxUndo,    SS_LCTL("z"),   KC_Z, KC_X)
+SUBS(zcCut,     SS_LCTL("x"),   KC_Z, KC_C)
+SUBS(xcCopy,    SS_LCTL("c"),   KC_X, KC_C)
+SUBS(cvPaste,   SS_LCTL("v"),   KC_C, KC_V)
+
+// can't do proper shift+backspace=del with modtaps, so do this instead
+COMB(rsBsDel,    KC_DEL,         LT(1,KC_BSPC), RSFT_T(KC_J))
+COMB(lsBsDel,    KC_DEL,         LT(1,KC_BSPC), LSFT_T(KC_F))
