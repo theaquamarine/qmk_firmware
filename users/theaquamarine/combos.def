@@ -22,7 +22,7 @@ COMB(jmSemicolon, KC_SCLN, RSFT_T(KC_J), LT(1, KC_M))
 
 COMB(mcommamodEnter, KC_ENTER, LT(1, KC_M), LT(2, KC_COMM))
 
-COMB(resetcombo, RESET, KC_U, KC_I, KC_O, KC_P, LT(2, KC_COMM))
+COMB(resetcombo, QK_BOOTLOADER, KC_U, KC_I, KC_O, KC_P, LT(2, KC_COMM))
 
 // trying to find somewhere got for kc_mins
 // COMB(cxMins, KC_MINS, KC_C, KC_X)
