@@ -47,7 +47,7 @@
 
 
       "LT(7,KC_TAB)",
-      "LT(5,KC_SPC)",
+      "LT(4,KC_SPC)",
       "LT(1,KC_BSPC)",
       "KC_ENT"
     ],
