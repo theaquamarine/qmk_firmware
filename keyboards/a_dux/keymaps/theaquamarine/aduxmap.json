@@ -34,7 +34,7 @@
       "KC_Z",
       "KC_X",
       "KC_C",
-      "LT(7,KC_V)",
+      "LT(8,KC_V)",
       "KC_B",
       "KC_N",
       "LT(1,KC_M)",
@@ -46,10 +46,10 @@
 
 
 
-      "LT(7,KC_TAB)",
+      "LT(8,KC_TAB)",
       "LT(4,KC_SPC)",
       "LT(1,KC_BSPC)",
-      "KC_ENT"
+      "LT(8,KC_ENT)"
     ],
     [
       "KC_EQL",
