@@ -37,3 +37,7 @@
 
 #define COMBO_VARIABLE_LEN
 #define COMBO_TERM 30
+
+// liatris LED
+#define LED_CAPS_LOCK_PIN 24
+#define LED_PIN_ON_STATE 0
